@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement CyberChallenges2K25</title>
+    <link rel="icon" type="image/png" href="image.png">
+    <link rel="shortcut icon" type="image/png" href="image.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glitch-text/1.0.0/glitch-text.min.js"></script>
+</head>
+
+<body>
+    <div class="animated-background" id="animatedBg"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="main-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="logo-section">
+                    <div class="logo">
+                    </div>
+                    <div class="title">CCS-UNCHK CyberChallenges2K25</div>
+                </div>
+
+                <div class="controls-compact">
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">Tous</button>
+                        <button class="filter-tab" data-filter="group1">G1</button>
+                        <button class="filter-tab" data-filter="group2">G2</button>
+                    </div>
+
+                    <div class="search-compact">
+                        <input type="text" class="search-input-compact" placeholder="Rechercher..." id="searchInput">
+                        <div class="search-icon-compact">⌕</div>
+                    </div>
+
+                    <div class="status-compact" id="statusCompact">
+                        <div class="status-dot"></div>
+                        <span>En ligne</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="hero-section">
+                <div class="hero-title">CCS-UNCHK Cyberchallenges2K25</div>
+                <div class="hero-subtitle">Scoreboard final.</div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="totalTeams">0</div>
+                        <div class="hero-stat-label">Équipes Totales</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="onlineTeams">0</div>
+                        <div class="hero-stat-label">Équipes Actives</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="totalPoints">0</div>
+                        <div class="hero-stat-label">Points Totaux</div>
+                    </div>
+                </div>
+
+                <div class="hero-last-update">
+                    <div class="update-dot"></div>
+                    <span>Dernière mise à jour du 01 Juin 2025</span>
+                </div>
+            </div>
+
+            <div class="separator-line"></div>
+            <div class="leaderboard-bigtitle">Leaderboard</div>
+            <div class="separator-line"></div>
+
+            <div class="podium-section" id="podiumSection">
+                <div class="podium-container" id="podiumContainer">
+                </div>
+            </div>
+
+            <div class="leaderboard-section">
+                <div id="leaderboardContent">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button class="modal-close">✖</button>
+            </div>
+            <div class="modal-team-info">
+            </div>
+            <div class="modal-members-grid">
+            </div>
+        </div>
+    </div>
+
+    <div class="signature" id="signature">M</div>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/three@0.120.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/dat.gui@0.7.6/build/dat.gui.min.js"></script>
+</body>
+
+</html>
